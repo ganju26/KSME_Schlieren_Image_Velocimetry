@@ -55,7 +55,7 @@ nav a{color:inherit;margin-right:14px;font-weight:600}
 
 <section id="method">
 <h2>Method</h2>
-<p class="method">Recording: 105 frames at 15 fps (7 s). Each frame was registered to the middle frame (rigid shift) and matched in global brightness. The 105-frame time mean was then subtracted, so that only the moving schlieren pattern remains, and the image was binned 4&times;4. The velocity between frames k and k+1 (&Delta;t = 1/15 s) was computed with Horn&ndash;Schunck optical flow (&alpha; = 30). Dark regions are masked. Arrow length: 0.8 mm/s = one grid spacing (about 0.7 mm); faster vectors are clipped to this length. Color gives the speed (0&ndash;3 mm/s).</p>
+<p class="method">Each frame was registered to the middle frame to remove camera shake and matched in global brightness. The time-mean image was then subtracted, so that only the moving schlieren pattern remains, and the image was binned. The velocity between consecutive frames was computed with Horn&ndash;Schunck optical flow. Dark regions are masked. Arrow color gives the speed; faster vectors are clipped to a fixed length.</p>
 </section>
 
 </main></body>
