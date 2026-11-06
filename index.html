@@ -24,8 +24,6 @@ h2{font-size:1.2rem;margin:2em 0 .5em;padding-bottom:.25em;border-bottom:1px sol
 <body><main>
 
 <h1>Schlieren Image Velocimetry</h1>
-<p class="sub">Each video shows one case. Left: schlieren image. Right: velocity field obtained from it, drawn on the same image. Both are played in sync at 1/3 of real time. ROI width = 40 mm.</p>
-<p class="tip">Tip: rotate your phone to landscape and tap full screen.</p>
 
 <figure>
 <p class="case">Pure 130min</p>
@@ -43,9 +41,6 @@ h2{font-size:1.2rem;margin:2em 0 .5em;padding-bottom:.25em;border-bottom:1px sol
 <p class="case">EHD 6kV 200min</p>
 <video src="videos/raw_vs_velocity_EHD6kV_200min.mp4" poster="videos/raw_vs_velocity_EHD6kV_200min.jpg" controls muted loop playsinline preload="metadata"></video>
 </figure>
-
-<h2>Method</h2>
-<p class="method">Each frame was registered to the middle frame to remove camera shake and matched in global brightness. The time-mean image was then subtracted, so that only the moving schlieren pattern remains, and the image was binned. The velocity between consecutive frames was computed with Horn&ndash;Schunck optical flow. Dark regions are masked. Arrow color gives the speed; faster vectors are clipped to a fixed length.</p>
 
 </main></body>
 </html>
